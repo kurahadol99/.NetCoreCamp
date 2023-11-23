@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ValidationRules\" />
+    <PackageReference Include="FluentValidation" Version="11.3.0" />
   </ItemGroup>
 
 </Project>
