@@ -18,9 +18,29 @@ namespace BusinessLayer.Concrete
             _aboutDal = aboutDal;
         }
 
+        public void Add(About entity)
+        {
+            _aboutDal.Add(entity);
+        }
+
+        public void Delete(About entity)
+        {
+            _aboutDal.Delete(entity);
+        }
+
+        public About Get(int id)
+        {
+           return _aboutDal.GetById(id);
+        }
+
         public List<About> GetList()
         {
             return _aboutDal.GetListAll();
+        }
+
+        public void Update(About entity)
+        {
+            _aboutDal.Update(entity);
         }
     }
 }

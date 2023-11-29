@@ -18,8 +18,7 @@ namespace BusinessLayer.Concrete
         {
              _categoryDal = CategoryDal;
         }
-
-
+         
         public void Add(Category category)
         {
             _categoryDal.Add(category);
@@ -30,12 +29,12 @@ namespace BusinessLayer.Concrete
             _categoryDal.Delete(category);
         }
 
-        public List<Category> GetCategories()
+        public List<Category> GetList()
         {
             return _categoryDal.GetListAll();
         }
 
-        public Category GetCategory(int id)
+        public Category Get(int id)
         {
             return _categoryDal.GetById(id);
         }

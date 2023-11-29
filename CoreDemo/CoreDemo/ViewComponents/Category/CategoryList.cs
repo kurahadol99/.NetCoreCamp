@@ -10,7 +10,7 @@ namespace CoreDemo.ViewComponents.Category
         
         public IViewComponentResult Invoke()
         {
-            var values = cm.GetCategories();
+            var values = cm.GetList();
             return View(values);
         }
     }
