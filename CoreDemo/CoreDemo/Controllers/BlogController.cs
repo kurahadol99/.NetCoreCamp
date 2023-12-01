@@ -19,6 +19,7 @@ namespace CoreDemo.Controllers
             var values = bm.GetBlogListWithCategory();
             return View(values);
         }
+       
         public IActionResult BlogReadAll(int id)
         {
             ViewBag.i = id;
@@ -89,6 +90,10 @@ namespace CoreDemo.Controllers
         {
             bm.Update(p);
             return RedirectToAction("BlogListByWriter");
+        }
+        public IActionResult Test123()
+        {
+            return View();
         }
     }
 }
